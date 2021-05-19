@@ -474,7 +474,6 @@ insert into `laravel`.`alumnos` (id_residencia, nombre_alumno, apellido_alumno, 
  (14, 'Jacobo', 'Lindeboom', 14, '365-330-9748', '0 Utah Street'), (15, 'Alejoa', 'Heister', 15, '580-429-6190', '89034 Ramsey Court'), (16, 'Casandra', 'Waggatt', 16, '773-722-7179', '6 Hanson Alley'),
  (17, 'Winnah', 'Cullinan', 17, '423-881-6214', '068 Tennyson Terrace'), (18, 'Leslie', 'Gunnell', 18, '225-167-8594', '05116 Troy Alley'), (19, 'Immanuel', 'Minter', 19, '671-236-6523', '5 Kim Lane'),
  (20, 'Rosalia', 'Vinnick', 20, '324-233-8785', '71849 Harper Junction'), (21, 'Wyndham', 'Mussetti', 21, '930-520-4233', '94343 Brown Road'), (22, 'Rustie', 'Scanlan', 22, '695-409-2219', '5 Armistice Trail'),
-<<<<<<< HEAD
  (23, 'Minta', 'Janjusevic', 23, '683-439-3730', '0 Elka Road'), (24, 'Jared', 'McCauley', 24, '879-396-7889', '18516 Bartillon Street'), (25, 'Edsel', 'Skerritt', 25, '102-276-3547', '1592 Walton Junction');
  
 insert into MOCK_DATA (ciclo) values (1), (2), (3), (4), (5), (6), (7), (8), (9), (10), (11), (12), (13), (14), (15), (17), (18), (19),
@@ -673,4 +672,3 @@ insert into `laravel`.`matrículas`  (id_programación, cod_idioma, cod_alumno, 
 (24, 24, 24, 24, 24, 24, 24, 24, 24),
 (25, 25, 25, 25, 25, 25, 25, 25, 25);
  
->>>>>>> d1dbef0c2080f75382bf12ab3da9a181ef2600c5
