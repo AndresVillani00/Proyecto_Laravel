@@ -19,8 +19,11 @@ class CreateAlumnosTable extends Migration
             $table->string('apellido_alumno');
             $table->integer('código_curso');
             $table->string('teléfono_alumno');
+<<<<<<< HEAD
 
            
+=======
+>>>>>>> 3285c772e1a7ed3a3b03eafa08723c4f32cd3b96
         });
     }
 

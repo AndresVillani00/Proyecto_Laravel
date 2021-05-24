@@ -20,8 +20,11 @@ class CreateUsuariosTable extends Migration
             $table->integer('código_usuario');
             $table->string('correo_usuario');
             $table->string('nombre_curso_usuario');
+<<<<<<< HEAD
 
             $table->timestamps();
+=======
+>>>>>>> 3285c772e1a7ed3a3b03eafa08723c4f32cd3b96
         });
     }
 

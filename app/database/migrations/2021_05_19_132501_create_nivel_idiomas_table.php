@@ -17,8 +17,11 @@ class CreateNivelIdiomasTable extends Migration
             $table->integer('cod_nivel')->primary()->autoIncrement();
             $table->integer('nivel');
             $table->date('fecha');
+<<<<<<< HEAD
 
             $table->timestamps();
+=======
+>>>>>>> 3285c772e1a7ed3a3b03eafa08723c4f32cd3b96
         });
     }
 

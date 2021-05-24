@@ -19,9 +19,12 @@ class CreateCarritoTable extends Migration
             $table->integer('productos');
             $table->integer('cantidad');
             $table->integer('id_producto');
+<<<<<<< HEAD
 
             $table->foreign('id_producto')->references('id_producto')->on('productos')->onDelete('set null');
             $table->timestamps();
+=======
+>>>>>>> 3285c772e1a7ed3a3b03eafa08723c4f32cd3b96
         });
     }
 

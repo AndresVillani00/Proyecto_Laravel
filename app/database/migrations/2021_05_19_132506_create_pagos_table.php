@@ -15,12 +15,17 @@ class CreatePagosTable extends Migration
     {
         Schema::create('pagos', function (Blueprint $table) {
             $table->integer('id_pago')->primary()->autoIncrement();
+<<<<<<< HEAD
             $table->integer('id_alumno');->nullable();
             $table->integer('cvv');
 
             $table->foreign('id_alumno')
             ->references('cod_alumno')->on('alumnos')
             ->onDelete('set null');
+=======
+            $table->integer('id_alumno');
+            $table->integer('cvv');
+>>>>>>> 3285c772e1a7ed3a3b03eafa08723c4f32cd3b96
         });
     }
 

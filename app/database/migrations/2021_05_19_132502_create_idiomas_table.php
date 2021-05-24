@@ -17,12 +17,16 @@ class CreateIdiomasTable extends Migration
             $table->integer('cod_idioma')->primary()->autoIncrement();
             $table->string('idioma');
             $table->string('nivel');
+<<<<<<< HEAD
             $table->integer('cod_nivel')->nullable();
            
            
             $table->foreign('cod_nivel')->references('cod_nivel')->on('nivel_idiomas')->onDelete('set null');
            
             $table->timestamps();
+=======
+            $table->integer('cod_nivel');
+>>>>>>> 3285c772e1a7ed3a3b03eafa08723c4f32cd3b96
         });
     }
 

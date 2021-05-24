@@ -18,10 +18,14 @@ class CreateProductosTable extends Migration
             $table->string('nombre_curso');
             $table->dateTime('fecha');
             $table->integer('precio');
+<<<<<<< HEAD
             $table->integer('id_descuento');->nullable();
             
             $table->foreign('id_descuento')->references('id_descuento')->on('descuentos')->onDelete('set null');
             $table->timestamps();
+=======
+            $table->integer('id_descuento');
+>>>>>>> 3285c772e1a7ed3a3b03eafa08723c4f32cd3b96
         });
     }
 
