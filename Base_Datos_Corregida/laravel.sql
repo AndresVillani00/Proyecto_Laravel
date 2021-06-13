@@ -1,6 +1,3 @@
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
-ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'root';
-ALTER USER 'default'@'%' IDENTIFIED WITH mysql_native_password BY 'secret';
 
 -- drop database laravel;
 --  create  database laravel;
@@ -42,8 +39,8 @@ id_descuento int not null
 )engine = innoDb;
 
 -- Table carrito
-drop table if exists carrito;
-create table if not exists carrito(
+drop table if exists carritos;
+create table if not exists carritos(
 id_carrito int primary key not null auto_increment,
 id_datos_usuario int not null,
 productos int not null,
@@ -197,7 +194,7 @@ total int not null
 alter table productos add foreign key (id_descuento) references descuentos (id_descuento);
 
 -- Filtros para la tabla carrito
-alter table carrito add foreign key (id_producto) references productos (id_producto);
+alter table carritos add foreign key (id_producto) references productos (id_producto);
 
 -- Filtros para la tabla horarios
 alter table horarios add foreign key (cod_ciclo) references ciclos (cod_ciclo);
@@ -234,7 +231,7 @@ alter table temarios add foreign key (id_curso) references cursos (id_curso);
 
 -- Filtros para la tabla ordenes
 alter table ordenes add foreign key (id_alumno) references alumnos (id_alumno);
-alter table ordenes add foreign key (id_carrito) references carrito (id_carrito);
+alter table ordenes add foreign key (id_carrito) references carritos (id_carrito);
 alter table ordenes add foreign key (id_pago) references pagos (id_pago);
 alter table ordenes add foreign key (id_metodo_pago) references metodo_pagos (id_metodo_pago);
 
@@ -390,7 +387,7 @@ insert into productos (id_producto, nombre_curso, fecha, precio , id_descuento) 
 -- insert tabla carrito
 
 
-insert into carrito (id_carrito,  id_datos_usuario, productos, cantidad,  id_producto) values 
+insert into carritos (id_carrito,  id_datos_usuario, productos, cantidad,  id_producto) values 
 (1, 1, 1, 2, 1),
 (3, 3, 1, 1, 3),
 (4, 4, 1, 1, 4),
@@ -766,7 +763,7 @@ select*from Salas;
 select*from alumnos;
 select*from descuentos;
 select*from productos;
-select*from carrito;
+select*from carritos;
 select*from ciclos;
 select*from usuarios;
 select*from horarios;
@@ -782,3 +779,4 @@ select*from residencias;
 select*from temarios;
 select*from ordenes;
 
+show tables;
